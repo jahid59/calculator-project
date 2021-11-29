@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="calculator-section">
+        <div class="calculator">
+           <input type="text" id="view" value="">
+                <button type="button" onclick="one()">1</button>
+                <button type="button" onclick="two()">2</button>
+                <button type="button" onclick="three()">3</button>
+                <button type="button" onclick="four()">4</button>
+                <button type="button" onclick="five()">5</button>
+                <button type="button" onclick="six()">6</button>
+                <button type="button" onclick="seven()">7</button>
+                <button type="button" onclick="eight()">8</button>
+                <button type="button" onclick="nine()">9</button>
+                <button type="button" onclick="zero()">0</button>
+                <button type="button" onclick="add()">+</button>
+                <button type="button" onclick="sub()">-</button>
+                <button type="button" onclick="dev()">/</button>
+                <button type="button" onclick="mult()">*</button>
+                <button type="button" onclick="equal()">=</button>
+                <button type="button" onclick="clr()">C</button> 
+        </div>
+        <div class="btn">
+            <a href="index.html">BACK</a>
+        </div>
+    </section>
+    
+
+<script>
+
+   function one(){
+       document.getElementById("view").value+=1 ;
+   }
+   function two(){
+       document.getElementById("view").value+=2 ;
+   }
+   function three(){
+       document.getElementById("view").value+=3 ;
+   }
+   function four(){
+       document.getElementById("view").value+=4 ;
+   } 
+   function five(){
+       document.getElementById("view").value+=5 ;
+   }
+   function six(){
+       document.getElementById("view").value+=6 ;
+   }
+   function seven(){
+       document.getElementById("view").value+=7 ;
+   }
+   function eight(){
+       document.getElementById("view").value+=8 ;
+   }
+   function nine(){
+       document.getElementById("view").value+=9 ;
+   }
+   function zero(){
+       document.getElementById("view").value+=0 ;
+   }
+
+   function add(){
+       document.getElementById("view").value+="+" ;
+   }
+   function sub(){
+       document.getElementById("view").value+="-" ;
+   }
+   function dev(){
+       document.getElementById("view").value+="/" ;
+   }
+   function mult(){
+       document.getElementById("view").value+="*" ;
+   }
+   function equal(){
+       document.getElementById("view").value=eval(document.getElementById("view").value) ;
+   }
+   function clr(){
+       document.getElementById("view").value="";
+   }
+
+</script>
+
+
+
+
+
+</body>
+</html>
